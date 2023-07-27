@@ -10,3 +10,17 @@
     <!-- Portfolio visualization can be added here in later parts -->
 </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Next-Gen Wealth Management Dashboard!</h1>
+    <p>{{ recommendation }}</p>
+    <img src="{{ url_for('static', filename='portfolio_allocation.png') }}" alt="Portfolio Allocation">
+</body>
+</html>
+
