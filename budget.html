@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Budgeting Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Budgeting Calculator</h1>
+    <form method="post">
+        <input type="number" name="income" placeholder="Income" required>
+        <input type="number" name="expenses" placeholder="Expenses" required>
+        <button type="submit">Calculate</button>
+    </form>
+</body>
+</html>
