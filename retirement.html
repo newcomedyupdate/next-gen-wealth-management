@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Retirement Planner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Retirement Planner</h1>
+    <form method="post">
+        <input type="number" name="current_age" placeholder="Current Age" required>
+        <input type="number" name="retirement_age" placeholder="Retirement Age" required>
+        <input type="number" name="current_savings" placeholder="Current Savings" required>
+        <input type="number" name="annual_contributions" placeholder="Annual Contributions" required>
+        <input type="number" name="inflation_rate" placeholder="Inflation Rate (%)" required>
+        <input type="number" name="investment_return" placeholder="Investment Return (%)" required>
+        <button type="submit">Calculate</button>
+    </form>
+</body>
+</html>
