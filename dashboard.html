@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Next-Gen Wealth Management Dashboard!</h1>
+    <p>{{ recommendation }}</p>
+    <h2>Mock Real-Time Market Data</h2>
+    <ul>
+        {% for stock, price in stock_prices.items() %}
+        <li>{{ stock }}: ${{ "%.2f"|format(price) }}</li>
+        {% endfor %}
+    </ul>
+    <!-- Portfolio visualization can be added here in later parts -->
+</body>
+</html>
