@@ -7,6 +7,7 @@
 <body>
     <h1>Welcome to the Next-Gen Wealth Management Dashboard!</h1>
     <p>{{ recommendation }}</p>
+
     <!-- Portfolio visualization can be added here in later parts -->
 </body>
 </html>
@@ -21,6 +22,17 @@
     <h1>Welcome to the Next-Gen Wealth Management Dashboard!</h1>
     <p>{{ recommendation }}</p>
     <img src="{{ url_for('static', filename='portfolio_allocation.png') }}" alt="Portfolio Allocation">
+</body>
+</html>
+
+
+    <h2>Mock Real-Time Market Data</h2>
+    <ul>
+        {% for stock, price in stock_prices.items() %}
+        <li>{{ stock }}: ${{ "%.2f"|format(price) }}</li>
+        {% endfor %}
+    </ul>
+    <!-- Portfolio visualization can be added here in later parts -->
 </body>
 </html>
 
